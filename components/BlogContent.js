@@ -1,12 +1,8 @@
 import BlockContent from "@sanity/block-content-to-react";
-import HighlightCode from "./HighlightCode";
 import {urlFor} from "lib/api";
 
 const serializers = {
   types: {
-    code: ({ node: { language, code, filename } }) => {
-      return <HighlightCode language={language}>{code}</HighlightCode>;
-    },
     image: ({node: {asset, alt, position = 'center'}}) => {
 
       return (
