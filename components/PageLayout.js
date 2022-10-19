@@ -1,6 +1,6 @@
 import NavbarComponent from "./NavbarComponent";
 import { Container } from "react-bootstrap";
-import Head from "next/Head";
+import Head from "next/head";
 
 export default function PageLayout({ children, className }) {
   return (
